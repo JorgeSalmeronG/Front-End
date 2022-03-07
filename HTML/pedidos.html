@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos Pastelería "Happy Day"</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <br>
+    <h1>Formulario de pedido</h1>
+    <form action="#">
+        <p>
+            <i>Favor de llenar los campos marcados con <em>*</em></i>
+        </p>
+        <fieldset>
+            <legend>Ingrese sus datos de contacto</legend>
+            <label for="nombre">Nombre: </label>
+            <input class="contacto" type="text" name="nombre" id="nombre"><br>
+            <label for="phone">Teléfono: </label>
+            <input class="contacto" type="tel" name="phone" id="phone"><br>
+            <label for="correo">Email: </label>
+            <input class="contacto" type="email" name="correo" id="correo"><br>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Tipo de pastel</legend>
+            <input type="checkbox" name="uno" id="uno">
+            <label for="uno">1 leche</label>
+            <input type="checkbox" name="dos" id="dos">
+            <label for="dos">2 leches</label>
+            <input type="checkbox" name="tres" id="tres">
+            <label for="tres">3 leches</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Sabores</legend>
+            <input type="checkbox" name="sabores" id="Vainilla">
+            <label for="Vainilla">Vainilla</label>
+            <input type="checkbox" name="sabores" id="Fresa">
+            <label for="Fresa">Fresa</label>
+            <input type="checkbox" name="sabores" id="Chocolate">
+            <label for="Chocolate">Chocolate</label>
+            <input type="checkbox" name="sabores" id="Nuez">
+            <label for="Nuez">Nuez</label>
+            <input type="checkbox" name="sabores" id="Limon">
+            <label for="Limon">Limón</label>
+            <input type="checkbox" name="sabores" id="Cajeta">
+            <label for="Cajeta">Cajeta</label>
+            <input type="checkbox" name="sabores" id="Capuchino">
+            <label for="Capuchino">Capuchino</label>
+            <input type="checkbox" name="sabores" id="Zarzamora">
+            <label for="Zarzamora">Zarzamora</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Decorativos</legend>
+            <input type="checkbox" name="decorativos" id="chocoBlanco">
+            <label for="chocoBlanco">Chocolate Blanco</label>
+            <input type="checkbox" name="decorativos" id="panditas">
+            <label for="panditas">Panditas</label>
+            <input type="checkbox" name="decorativos" id="duraznos">
+            <label for="duraznos">Duraznos</label>
+            <input type="checkbox" name="decorativos" id="fresas">
+            <label for="fresas">Fresas</label>
+            <input type="checkbox" name="decorativos" id="cerezas">
+            <label for="cerezas">Cerezas</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Accesorios</legend>
+            <input type="checkbox" name="Vela Número" id="velas">
+            <label for="velas">Vela en forma de Número</label>
+            <input type="checkbox" name="Listón texto" id="liston">
+            <label for="liston">Listón con mensaje personalizado</label>
+            <input type="checkbox" name="monito" id="monito">
+            <label for="monito">Personaje Disney de caramelo</label>
+        </fieldset><br>
+       
+        <fieldset>
+            <legend>Información Complementaria</legend>    
+            <label for="description" id="desc">Descripción  general del pastel</label>
+            <textarea class="contacto" name="description" id="description" cols="30" rows="5" placeholder="Especifique: forma, color, mensaje, velas de Número [0-9], ...,etc. " ></textarea><br>       
+        </fieldset>
+
+        <br>
+        <input type="reset" value="Borrar todo">
+        <input type="submit" value="Enviar">
+
+    </form>
+    
+</body>
+</html>

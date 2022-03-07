@@ -1,0 +1,102 @@
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+    background-color: rgb(179, 212, 201);
+
+}
+
+/* Estilo de header */
+ header {
+    margin: 0;
+    background-color: rgb(76, 173, 218);
+    padding: 5px 0;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    text-shadow: 3px 3px 1px black;
+}
+
+.logo, .marca {
+    display: inline-flex;
+    top: 0;
+  }
+.wrapper{
+    display: inline-flex;
+    float: right;
+    align-items: normal;
+
+}     
+
+nav {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    top: 0; 
+    background-color: rgb(126, 45, 202);
+}
+
+a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffff;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 5px;
+    border: 1px solid black;
+    
+}
+
+footer {
+    background-color: rgb(39, 80, 192);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+table, td, th{
+    border: 1px solid black;
+    text-align: center;
+   
+}
+
+label {
+    width: 110px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+}
+fieldset {
+    width: 600px;
+}
+legend{
+    font-weight: bold;
+}
+input.contacto {
+    width: 250px;
+}
+#desc{
+    vertical-align: top;
+}
+textarea{
+    resize: none;
+    width: 450px;
+}
+dl{
+    padding: 0px 15px;
+}
+input[type="submit"],[type="reset"]{
+    width: 100px;
+    height: 30px;
+    color: black;
+    font-weight: bold;
+}
+ul li, dl dt{
+    width: 270px;
+    text-align: right;
+    color: rgba(108, 73, 204, 1);
+}
