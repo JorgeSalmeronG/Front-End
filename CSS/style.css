@@ -1,0 +1,305 @@
+/* *{
+    border-style: solid;
+} */
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/*Encabezado principal, tamaño de letra de 100px en negrita y azul*/
+h1{
+    font-size: 100px;
+    font-weight: 900;
+    color: rgb(10, 10, 85);
+
+}
+/*Encabezado secundario*/
+h2{
+    font-size: 60px;
+    font-weight: 900;
+    color: rgb(10, 10, 85);
+    padding: 0 5%; /*Relleno de 0 arriba y abajo y 5% der. e izq. Se ajusta txt más al centro*/
+}
+
+/*Mismo stilo para encabezado H3 y título de lista detallada*/
+h3, dl dt{
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(10, 10, 85);
+    margin: 6%;
+}
+
+/*Se quita estilo por default de elementos -li- de una lista*/
+li {
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex; /*Se pasan de columna a fila los elementos -li-*/
+}
+
+p, ul li{
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(88, 85, 85);
+    opacity: 0.7;
+    padding: 2% 2%;/* Se agrega espacios de relleno antes y despues de cada palabra*/
+    border-radius: 10px;/*Se hace redondeo de esquinas */
+}
+
+.divtxt{
+    width: 50%;
+    height: 1400px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+   
+}
+.divtxt > h1, p{
+    align-self: center;
+    padding: 0px 10%;
+} 
+
+/*Div contenedor de img, con ancho de 50% y fondo degradado*/
+.divimg{
+    width: 50%;
+    height: 1400px;
+    background: linear-gradient(to left, rgb(66, 66, 235),rgb(79, 165, 235));
+    display: grid;
+  
+}
+img{
+    height: 80%; /*Para que solo ocupe el 75% del div*/
+    place-self: end center; /*Alineación hacia abajo-centro*/
+}
+.wrapper{
+    display: inline-flex;
+    width: 100%;   
+}
+header{
+    position: absolute;
+    top: 0px;
+    width: 100%; 
+    height: 200px; 
+    background-color: rgba(255, 255, 255,0.7);
+
+    display: flex;
+    flex-flow:column;
+    justify-content:center;
+}
+.head{
+    font-size: 45px;
+    color: blue;
+    padding-right:15%;
+    padding-left: 5%;
+}
+.banner{
+    width: 75%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: absolute;
+    top:1150px;  
+}
+ 
+table td{
+    color:blue;
+    font-size: 30px;
+    font-weight: 900;
+}
+table th{
+    font-size: 30px;
+    color: rgb(112, 108, 108);
+}
+.banner button{
+    font-size: 35px;
+    width: fit-content;
+    margin-left: 100px;
+    padding: 20px 60px;
+
+    border-style: solid;
+    border-radius: 10px;
+}
+table{
+    border-spacing: 35px 5px;
+}
+
+.txt50{
+    width: 50%;
+}
+.divBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.divBox >*{
+    margin: 10px;
+}
+.benefit{
+    width: 20%;
+    height: auto;
+    border-style:solid;
+    border-color: beige;
+    font-weight:300;
+}
+.benefit:hover{
+    box-shadow: 0 15px 15px 15px rgba(0,0,0,0.24), 0 17px 50px 0 rgba(16, 97, 190, 0.5);
+}
+.benefit > img{
+    width: 80px;
+    height: 80px;
+    padding-left: 30px;
+}
+.divPrep1{
+    display: grid;
+    height: 400px;
+    width: 50%;
+    display: block;
+    position: relative;
+    left: 50%;
+}
+.divPrep2{
+    display: flex;
+    height: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+.prep1{
+    width: 50%;
+    height: 300px;
+    font-weight:300;
+    padding: 0 0;
+}
+.prep2{
+    width: 100%;
+    height: auto;
+    font-weight:300;
+    padding: 0 0;
+}
+.divImg2{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgb(66, 66, 235),rgb(79, 165, 235));
+    font-weight:300;
+    padding: 0 0;
+}
+.prep4{
+    width: 50%;
+    height: auto;
+    font-weight:300;
+    padding: 0 0;
+    display: grid;
+}
+.prep4 dl dd{
+    font-size: 30px; 
+}
+.divImg2 > img{
+    position: relative;
+    top: -30%;
+    height: 1300px;
+}
+.divEmer{
+    width: 100%;
+    height: 900px;
+    display: inline-flex;
+
+}
+.emer1{
+    width: 50%;
+    height: 400px;
+    position: relative;
+    right: 0;
+}
+.emer2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.emer2 > div{
+    width: 40%;
+    height: 40%;
+    display: block;
+    margin-right: 3%;
+    border-style: solid;
+    border-color: beige;
+    padding: 3%;
+}
+.emer2 div> img{
+    width: 80px;
+    height: 80px;
+    padding-left: 30px;
+    align-self: stretch;
+}
+button{
+    background-color: rgba(0, 0, blue, 0.4);
+    color: blue;
+    font-weight: bold;
+    
+}
+button:hover, .opt:hover{
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+.emer2 button{
+    display: block;
+    font-size: 30px;
+    height: 120px;
+    width:100%;
+    align-self: center;
+    border-radius: 10px;  
+}
+.divImg3{
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgb(66, 66, 235),rgb(79, 165, 235));
+ 
+}
+.divImg3 > img{
+    position: relative;
+    top: -35%;
+    height: 1200px;
+}
+.blank{
+    width: 100%;
+    height: 250px;
+}
+footer{
+    width: 100%;
+    display: inline-flex;
+    background-color: rgba(9, 19, 170, 0.1);
+    border-radius: 10px;
+}
+footer > div p{
+    width: 40%;
+    padding: 0;
+    margin-left: 10%;
+    display: grid;
+}
+footer > div{
+    width: 50%;
+    display: block;
+}
+.especial{
+    width: 70%;
+}
+
+.terms{
+    display: inline;    
+}
+
+table.about th{
+    color:rgb(10, 10, 85);
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+table.about td{
+    color:rgb(112, 108, 108);
+    padding-bottom: 20px;
+    padding-top: 10px;
+
+}
