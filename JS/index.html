@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <br><br><br>
+    <div class="contenedor"> 
+        <div class="divImagen">
+            <div class="frente">
+                <h1>Pokedex 2022</h1>
+            </div>
+
+            <br><br>
+           
+            <div class="picture">
+                               
+                 <img src="./noImg2.jpg" alt="imgDefault" id="pokeImage">
+                 
+                 <div class="mInfo">
+                   
+                    <label for="name">NAME: </label><br>
+                    <span id="name"></span><br><br>  
+                    <label for="type" >TYPE: </label><br>
+                    <span id="type"></span><br><br>
+                    <label for="abil" >ABILITIES: </label><br>
+                    <span id="abil"></span><br><br>
+                    <label for="tMoves">MOVES: </label><br>
+                    <span id="tMoves"></span><br>
+                 </div>
+                
+            </div><br>
+
+            <input type="text" id="pokeName" name="pokeName" placeholder="pikachu"><br>
+            <br>
+            <div class="botones2">
+                <button onclick="chgPoke()" id="change">OK</button>
+                <button onclick="back(pokeNum)">-</button>
+                <button onclick="next(pokeNum)">+</button>
+            </div>
+        
+        
+ 
+        </div>
+    
+        <div class="divCentro"></div>
+        <div class="frente2"></div>
+        <div class="ladoB">
+            
+            <div class="blank"></div>
+            <div class="divStats">
+                    <p id="bexp"></p>
+                    <p id="height"></p>
+                    <p id="weight"></p>
+                <ul>
+                    <li>
+                        <ul><span id="hp">00</span>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <span>PS</span>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul><span id="attack">00</span>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <span>ATK</span>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul><span id="defense">00</span>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <span>DEF</span>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul><span id="sp_attack">00</span>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <span>SP.ATK</span>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul><span id="sp_defense">00</span>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <span>SP.DEF</span>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul><span id="speed">00</span>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <span>SPEED</span>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="blank"></div>
+            <div class="pantalla2">
+                <table>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div class="botones2">
+                    
+                    <button onclick="previo(info, pagina)" id="prev"><<</button>
+                    <button onclick="siguiente(info, pagina)" id="next">>></button>
+
+                    
+            </div>
+        </div>
+
+    </div>
+    
+
+</body>
+
+<footer>
+<script src="./app.js"></script>
+</footer>
+</html>

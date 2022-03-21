@@ -1,0 +1,183 @@
+ *{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:15px 
+} 
+h1{
+    font-size: 30px;
+    color: white;
+    margin-left: 10%;
+}
+
+ .contenedor{ 
+    float: left;
+    width: 50%;
+    height: 500px;
+    margin-left: 10%;
+} 
+.divImagen {
+    float:left;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 48%;
+    height: inherit;
+    background-color: rgb(218, 53, 53);
+}
+
+img{
+
+    background-color: black;
+    object-fit: cover;
+    margin: 0 auto; /*Para centrar en horizontal*/
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+ul,li{
+    list-style: none;
+    border-style: none;
+    padding: 2px;
+    border: 1px solid black;
+    background-color: white;
+}
+.divCentro{
+    float:left;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 3%;
+    height: inherit;
+    background-color: brown;
+}
+.divStats, .pantalla2{
+    display: block;
+    margin: 0 auto;
+    padding-left: 5px;
+    border: 1px solid black;
+    width: 86%;
+    height: 42%;
+    background-color: black;
+    border-radius: 10px;
+}
+.divStats > *{
+    display: inline-flex;
+    width: 100%;
+}
+
+.divStats > p{
+    border: 1px solid white;
+    background-color:  black;
+    color: white;
+    width: 120px;
+    height: 25px;
+    line-height: 25px; 
+    justify-content: center;
+    margin-bottom: 0px;
+}
+.divStats > ul >li>ul{
+ 
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid white;
+    background-color: black;
+    padding: 2px;
+    width: 50px;
+}
+.divStats > ul{
+    width: 97%;
+    background-color: black;
+}
+span{
+    color: white;
+}
+.contenedor::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+table {
+    border: 1px solid white;
+    width: 97%;
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+table tr td{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    table-layout: fixed;
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+
+}
+ button {
+    font-size: 18px;
+    justify-content: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.frente{
+    width: 100%;
+    height: 80px;
+    border:1px solid black;
+    border-radius: 5px;
+    background-color: rgb(87, 17, 17);
+}
+.frente2{
+    width: 100%;
+    height: 80px;
+    background-color: none;
+}
+.botones2{
+    width:max-content;
+    margin: 0 auto;
+}
+.picture{
+    width: 95%;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.pantalla2{
+    padding-top: 5px;
+    height: 30%;
+}
+.ladoB{
+    float: left;
+    display: block;
+    flex-wrap: wrap;
+    height: 84%;
+    width: 47%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(218, 53, 53);
+
+}
+.blank{
+    height: 3%;
+}
+ul{
+    margin-bottom: 0px;
+}
+.mInfo{
+
+    width: 50%;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+
+}
+#change{
+    border-radius: 0px;
+    width: 60px;
+    margin-right: 100px;
+}
+
+#pokeName{
+    margin-left: 10%;
+}
